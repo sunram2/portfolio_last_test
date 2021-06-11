@@ -1,0 +1,106 @@
+#main01 {
+  clear:both;
+  width:100%;
+  height:0;
+  background-image: url("../img/index_main01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color:#fff;
+  overflow: auto;
+	padding-top : calc(893 / 1399 * 100%); /* calc(이미지 높이 ÷ 이미지 가로 × 100 %) */
+  position:relative;
+}
+#main01_p {
+  width:90%;
+  text-align:center;
+  position:absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+#main01_p p {
+  line-height:200%;
+}
+
+#main02 {
+  clear:both;
+  width:100%;
+  background-color:#222;
+  position:relative;
+}
+#main02_wrap {
+  position:absolute;
+  text-align:center;
+  vertical-align:middle;
+  width:100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-left:auto;
+  margin-right:auto;
+  color:#eee;
+}
+#main02_a {
+  margin-top:100px;
+  line-height:180%;
+  /*background-color:green;*/
+  display:inline-block;
+  margin:5% 0;
+}
+#main02_a h3 {
+  line-height:280%;
+}
+#main02_b {
+  top:60%;
+  line-height:180%;
+  /*background-color:red;*/
+  display:inline-block;
+  margin:5% 0;
+}
+#main02_b h3 {
+  line-height:280%;
+}
+
+
+
+
+@media (min-width: 1px) {
+div {
+  font-size:0.8em;
+}
+#main02 {
+  height:300px;
+}
+}
+
+@media only screen and (min-width: 347px) {
+  div {
+    font-size:0.9em;
+  }
+  #main02 {
+    height:400px;
+  }
+}
+
+
+/* 너비가 600픽셀 이상인 태블릿을 위한 설정 */
+@media only screen and (min-width: 600px) {
+  div {
+    font-size:1em;
+  }
+  #main02 {
+    height:600px;
+  }
+}
+
+/* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
+@media only screen and (min-width: 768px) {
+  div {
+    font-size:1.1em;
+  }
+  #main02 {
+    height:800px;
+  }
+
+  }

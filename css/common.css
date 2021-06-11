@@ -1,0 +1,256 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: inherit;
+  border-collapse: collapse;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+#nav .sel {
+  position:relative;
+}
+#nav .selected {
+  position:absolute;
+  background-color:#FFEA69;
+  bottom:-50%;
+  left:50%;
+  width:12px;
+  height:3.5px;
+  border-radius:10px;
+  margin:0 auto;
+  transform: translate(-50%, -50%)
+}
+html,body {
+  width:100%;
+  margin:0px;
+  padding:0px;
+}
+ul {
+  list-style-type:none;
+}
+body {
+  font-size:100%;
+}
+
+header {
+  position:sticky;
+  z-index:999;
+  width:100%;
+  padding:10px;
+  background-color:#000;
+  color:#fff;
+  position:relative;
+  top: 0;
+}
+header #logo #nav {
+  position:absolute;
+}
+
+#logo {
+  font-size:24pt;
+  font-weight:bold;
+  display:inline-block;
+}
+aside#menu {
+  color:#fff;
+}
+aside#menu li {
+  padding:10px;
+  margin:5px 0 0 0;
+  background-color:#b52d89;
+}
+section#main01 {
+  padding:15px;
+}
+section#main01 p {
+  padding:5px;
+  font-size:0.95em;
+  line-height:130%;
+}
+aside#photos img {
+  width:100%;
+}
+aside#photos li {
+  margin:5px 0 0 0;
+}
+footer {
+  height:80px;
+  padding:10px;
+  clear:both;
+  text-align:center;
+  background-color:#000;
+  font-size:0.75em;
+  color:#999;
+}
+a {
+  text-decoration:none;
+}
+#nav a:link, a:visited {
+  color:#ddd;
+}
+#nav a:hover {
+  color:#FFEA69;
+  transition: all 0.5s ease-out;
+}
+#nav a:active {
+  color:#FFEA69;
+}
+#nav a {
+  position:relative;
+}
+
+#nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background: #FFEA69;
+    transition: all .3s ease-out;
+}
+#nav a:hover::after {
+  width:100%;
+}
+
+
+
+/*    [class*="c_"] {
+  float:left;
+  padding:10px; */
+}
+/* 너비가 600픽셀 미만인 스마트폰을 위한 기본 설정
+[class*="c_"] {
+  width:100%;
+} */
+
+
+@media (min-width: 1px) {
+  #nav li {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 347px) {
+[class*="c_"] {
+  width:100%;
+}
+  .c_s_1 {width:8.33%;}
+  .c_s_2 {width:16.66%;}
+  .c_s_3 {width:25%;}
+  .c_s_4 {width:33.33%;}
+  .c_s_5 {width:41.66%;}
+  .c_s_6 {width:50%;}
+  .c_s_7 {width:58.33%;}
+  .c_s_8 {width:66.66%;}
+  .c_s_9 {width:75%;}
+  .c_s_10 {width:83.33%;}
+  .c_s_11 {width:91.66%;}
+  .c_s_12 {width:100%;}
+
+  header {
+    height:110px;
+    padding:10px 15px;
+    text-align:center;
+    position:sticky;
+  }
+  #logo {
+    text-align:center;
+  }
+  #nav li {
+    margin: 2% 5% 0 2%;
+    display:inline-block;
+  }
+  #nav {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    }
+    .box_a, .box_b, .box_c {
+
+    }
+
+}
+
+
+/* 너비가 600픽셀 이상인 태블릿을 위한 설정 */
+@media only screen and (min-width: 600px) {
+  .c_m_1 {width:8.33%;}
+  .c_m_2 {width:16.66%;}
+  .c_m_3 {width:25%;}
+  .c_m_4 {width:33.33%;}
+  .c_m_5 {width:41.66%;}
+  .c_m_6 {width:50%;}
+  .c_m_7 {width:58.33%;}
+  .c_m_8 {width:66.66%;}
+  .c_m_9 {width:75%;}
+  .c_m_10 {width:83.33%;}
+  .c_m_11 {width:91.66%;}
+  .c_m_12 {width:100%;}
+
+  [class*="c_"] {
+    float:left;
+    padding:10px;
+  }
+
+  header {
+    height:70px;
+    padding:13px 20px;
+    text-align:center;
+    position:sticky;
+  }
+
+  #nav li {
+    display:inline-block;
+    float:left;
+    margin:0 30px;
+  }
+  #nav {
+    display:inline-block;
+    }
+}
+
+/* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
+@media only screen and (min-width: 768px) {
+  .c_1 {width:8.33%;}
+  .c_2 {width:16.66%;}
+  .c_3 {width:25%;}
+  .c_4 {width:33.33%;}
+  .c_5 {width:41.66%;}
+  .c_6 {width:50%;}
+  .c_7 {width:58.33%;}
+  .c_8 {width:66.66%;}
+  .c_9 {width:75%;}
+  .c_10 {width:83.33%;}
+  .c_11 {width:91.66%;}
+  .c_12 {width:100%;}
+
+  [class*="c_"] {
+    float:left;
+    padding:10px;
+  }
+
+  header {
+    height:70px;
+    padding:13px 20px;
+    text-align:left;
+    position:relative;
+    position:sticky;
+  }
+
+  header ul {
+    height:30px;
+  }
+
+  #nav li {
+    float:left;
+    margin:15px 30px 0 30px;
+  }
+  #nav {
+    display:inline-block;
+    position:absolute;
+    margin-left:30px;
+    }
+}
